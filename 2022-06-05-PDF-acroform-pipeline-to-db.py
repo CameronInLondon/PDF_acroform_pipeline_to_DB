@@ -1,7 +1,5 @@
 # Extract from multiple acroforms to DB.
 
-
-# from ast import Str
 import traceback
 import sys
 import json
@@ -13,21 +11,14 @@ from pdfminer.pdfdocument import PDFDocument
 from pdfminer.pdftypes import resolve1
 from pdfminer.psparser import PSLiteral, PSKeyword
 from pdfminer.utils import decode_text
-# from pdfminer.high_level import extract_text
 import os
 from pathlib import Path
-# import re
 from glob import iglob
 print(os.getcwd())
-print(os.path.normpath(os.path.join(os.getcwd(), r'Blog\2022-06-05-PDF-acroform-pipeline-to-db')))
-# print(sqlite3.sqlite_version)
 
-folder_path = r'C:\Users\goldsby_c\OneDrive - Pearson PLC\myPython(onedrive)\GitHub\Blog\2022-06-05-PDF-acroform-pipeline-to-db'
-# folder_path = os.path.normpath(os.path.join(
-#     os.getcwd(), r'Blog\2022-06-05-PDF-acroform-pipeline-to-db'))
+folder_path = os.path.normpath(os.path.join(os.getcwd(), r'Blog\2022-06-05-PDF-acroform-pipeline-to-db'))
 
 # ------ Global vars ------ #
-
 list_of_nested_dicts = []
 
 
